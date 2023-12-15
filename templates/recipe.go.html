@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ .Title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+</head>
+
+<body>
+  <ul>
+    <li><a href="/">Home</a></li>
+  </ul>
+  <h1>{{ .Title }}</h1>
+  <h2>Tags</h2>
+  <ul>
+    {{ range .Tags -}}
+    <li>{{ . }}</li>
+    {{ end -}}
+  </ul>
+  <h2>Ingredients</h2>
+  {{ range $title, $ingredients := .Ingredients -}}
+  <h3>{{ title $title }}</h3>
+  <ul>
+    {{ range $ingredients -}}
+    <li>{{ . }}</li>
+    {{ end -}}
+  </ul>
+  {{- end }}
+  <h2>Procedure</h2>
+  <ul>
+    {{ range .Procedure -}}
+    <li>{{ . }}</li>
+    {{ end -}}
+  </ul>
+</body>
+
+</html>
