@@ -5,35 +5,47 @@
   <title>{{ .Title }}</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="static/style.css">
 </head>
 
 <body>
-  <ul>
-    <li><a href="/">Home</a></li>
-  </ul>
-  <h1>{{ .Title }}</h1>
-  <h2>Tags</h2>
-  <ul>
-    {{ range .Tags -}}
-    <li>{{ . }}</li>
-    {{ end -}}
-  </ul>
-  <h2>Ingredients</h2>
-  {{ range $title, $ingredients := .Ingredients -}}
-  <h3>{{ title $title }}</h3>
-  <ul>
-    {{ range $ingredients -}}
-    <li>{{ . }}</li>
-    {{ end -}}
-  </ul>
-  {{- end }}
-  <h2>Procedure</h2>
-  <ul>
-    {{ range .Procedure -}}
-    <li>{{ . }}</li>
-    {{ end -}}
-  </ul>
+  <div id="body">
+    <div id="nav">
+      <a href="/">Home</a>
+    </div>
+    <div id="header" class="content">
+      <h1>{{ .Title }}</h1>
+      <div id="tags">
+        {{ range .Tags -}}
+        <div>{{ . }}</div>
+        {{ end -}}
+      </div>
+    </div>
+    <div class="flex">
+      <div id="ingredients" class="content">
+        <h2>Ingredients</h2>
+        {{ range $title, $ingredients := .Ingredients -}}
+        <h3>{{ title $title }}</h3>
+        <ul>
+          {{ range $ingredients -}}
+          <li>{{ . }}</li>
+          {{ end -}}
+        </ul>
+        {{- end }}
+      </div>
+      <div id="procedure" class="content">
+        <h2>Procedure</h2>
+        <ol>
+          {{ range .Procedure -}}
+          <li>{{ . }}</li>
+          {{ end -}}
+        </ol>
+      </div>
+    </div>
+    <div id="footer" class="content">
+      <div>Copyright (c) 2023 Jimmy Keith. All Rights Reserved. </div>
+    </div>
+  </div>
 </body>
 
 </html>
