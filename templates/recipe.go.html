@@ -24,10 +24,12 @@
     <div class="flex">
       <div id="ingredients" class="content">
         <h2>Ingredients</h2>
-        {{ range $title, $ingredients := .Ingredients -}}
-        <h3>{{ title $title }}</h3>
+        {{ range .Ingredients -}}
+        {{ if .Name -}}
+        <h3>{{ .Name }}</h3>
+        {{- end }}
         <ul>
-          {{ range $ingredients -}}
+          {{ range .Items -}}
           <li>{{ . }}</li>
           {{ end -}}
         </ul>

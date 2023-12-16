@@ -3,9 +3,11 @@ tags:
   - instant pot
   - beef
 ingredients:
-  tri-tip:
-    - 2-3 lbs tri tip roast
-  cooking_liquid:
+  - name: Beef
+    items:
+      - 2-3 lbs tri tip roast
+  - name: Sauce Mixture
+    items:
     - 1/3 cup soy sauce
     - 1/4 cup white vinegar
     - 1/4 cup olive oil
@@ -18,6 +20,7 @@ ingredients:
 procedure:
   - Chunk tri-tip into roughly 2" pieces
   - Saute on high to get good sear on a few faces of the beef chunks
+  - Add the Sauce Mixture to the pan and scrape up any browned bits on the pan
   - Pressure cook on high for 45 minutes
   - 10 minutes natural release
   - Remove meat from the pressure cooker and shred.

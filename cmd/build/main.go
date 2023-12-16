@@ -23,11 +23,15 @@ var (
 )
 
 type Recipe struct {
-	Title       string              `yaml:"title"`
-	Tags        []string            `yaml:"tags"`
-	Ingredients map[string][]string `yaml:"ingredients"`
-	Procedure   []string            `yaml:"procedure"`
+	Title       string   `yaml:"title"`
+	Tags        []string `yaml:"tags"`
+	Ingredients []struct {
+		Name  string   `yaml:"name"`
+		Items []string `yaml:"items"`
+	} `yaml:"ingredients"`
+	Procedure []string `yaml:"procedure"`
 }
+
 type Link struct {
 	Title string
 	Ref   string

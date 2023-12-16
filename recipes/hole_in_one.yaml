@@ -3,10 +3,10 @@ tags:
   - vegetarian
   - egg
 ingredients:
-  hole_in_one:
-    - Bread (preferably Dave's Killer White Bread)
-    - Eggs
-    - Butter or Mayo
+  - items:
+      - Bread (preferably Dave's Killer White Bread)
+      - Eggs
+      - Butter or Mayo
 procedure:
   - Spread butter or Mayo on both sides of bread
   - Use a biscuit cutter or cup to cut out the center of each slice
