@@ -5,16 +5,22 @@
   <title>{{ .Title }}</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
 </head>
-<ul>
-  {{ range .Links -}}
-  <li><a href="{{ .Ref }}">{{ .Title }}</a></li>
-  {{ end -}}
-</ul>
 
 <body>
-
+  <div id="body">
+    <div id="nav">
+      <a href="/recipes">Home</a>
+    </div>
+    <div class="content">
+      <ul>
+        {{ range .Links -}}
+        <li><a href="{{ .Ref }}">{{ .Title }}</a></li>
+        {{ end -}}
+      </ul>
+    </div>
+  </div>
 </body>
 
 </html>

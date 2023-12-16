@@ -40,6 +40,12 @@ li {
 #header {
   border-bottom: 2px solid #c7c7c7;
 }
+#procedure {
+  overflow-y: scroll;
+}
+#ingredients {
+  overflow-y: scroll;
+}
 #tags {
   display: flex;
   padding-bottom: 1em;
