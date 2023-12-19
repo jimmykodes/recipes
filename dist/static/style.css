@@ -81,6 +81,15 @@ li {
     border-bottom: 1px solid #c7c7c7;
   }
 }
+.tag-link a {
+  color: #c7c7c7;
+}
+.tag-link a:visited {
+  color: #c7c7c7;
+}
+.tag-link a:hover {
+  color: #9f9f9f;
+}
 a {
   color: #202746;
   text-decoration: none;

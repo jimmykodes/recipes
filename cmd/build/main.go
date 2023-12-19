@@ -39,11 +39,20 @@ type Link struct {
 	Ref   string
 }
 
+type LinkPage struct {
+	Title string
+	Links []Link
+}
+
 func main() {
 	if err := run(); err != nil {
 		fmt.Println("Error:", err)
 		os.Exit(1)
 	}
+}
+
+func encode(s string) string {
+	return strman.ToSnake(strings.Join(strings.Fields(s), "_"))
 }
 
 func run() error {
@@ -54,6 +63,7 @@ func run() error {
 		"title": func(s string) string {
 			return caser.String(strings.ReplaceAll(s, "_", " "))
 		},
+		"encode": encode,
 	}
 
 	tmpl, err := template.New("templates").Funcs(fm).ParseGlob(filepath.Join(*templateDir, "*.go.html"))
@@ -69,6 +79,7 @@ func run() error {
 	}
 
 	var links []Link
+	tags := make(map[string][]Link)
 
 	err = filepath.WalkDir(*recipeDir, func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
@@ -100,10 +111,30 @@ func run() error {
 		}
 		defer f.Close()
 
-		links = append(links, Link{Title: recipe.Title, Ref: fn})
+		link := Link{Title: recipe.Title, Ref: fn}
+		links = append(links, link)
+
+		for _, tag := range recipe.Tags {
+			t := encode(tag)
+			tags[t] = append(tags[t], link)
+		}
 
 		return tmpl.ExecuteTemplate(f, "recipe.go.html", recipe)
 	})
+	for tag, links := range tags {
+		err := func(tag string, links []Link) error {
+			f, err := os.Create(filepath.Join(*distDir, "tag_"+tag+".html"))
+			if err != nil {
+				return err
+			}
+			defer f.Close()
+			return tmpl.ExecuteTemplate(f, "tag.go.html", LinkPage{Title: tag, Links: links})
+		}(tag, links)
+		if err != nil {
+			return err
+		}
+	}
+
 	if err != nil {
 		return err
 	}
