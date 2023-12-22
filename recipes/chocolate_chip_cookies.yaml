@@ -3,10 +3,11 @@ tags:
   - cookies
   - dessert
 ingredients:
-  - name: browned butter
+  - name: Browned butter (about 8oz yield)
     items:
       - 3 sticks (12oz) butter
-  - items:
+  - name: Cookie dough
+    items:
     - 8oz butter (preferrably browned butter)
     - 1/2 cup white sugar
     - 1 cup light brown sugar
@@ -24,6 +25,7 @@ procedure:
       - Cook butter until the milk solids start to brown and smell like toffee
       - Browned butter can turn to burnt butter very quickly so watch closely!
       - Remove from heat and pour into a bowl surrounded by ice to halt cooking
+      - This should yield about 8oz browned butter depending on moisture content of original butter
   - name: Cookie dough (cookie method)
     items:
       - Add room temp butter to a mixer and cream with white and brown sugar until fluffy
