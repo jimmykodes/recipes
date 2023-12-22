@@ -55,6 +55,8 @@ func encode(s string) string {
 	return strman.ToSnake(strings.Join(strings.Fields(s), "_"))
 }
 
+var Prefix = ""
+
 func run() error {
 	flag.Parse()
 
@@ -63,10 +65,11 @@ func run() error {
 		"title": func(s string) string {
 			return caser.String(strings.ReplaceAll(s, "_", " "))
 		},
-		"encode": encode,
+		"routePrefix": func() string { return Prefix },
+		"encode":      encode,
 	}
 
-	tmpl, err := template.New("templates").Funcs(fm).ParseGlob(filepath.Join(*templateDir, "*.go.html"))
+	tmpl, err := template.New("templates").Funcs(fm).ParseGlob(filepath.Join(*templateDir, "*"))
 	if err != nil {
 		return err
 	}

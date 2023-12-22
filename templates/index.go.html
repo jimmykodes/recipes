@@ -10,15 +10,9 @@
 
 <body>
   <div id="body">
-    <div id="nav">
-      <a href="/recipes">Home</a>
-    </div>
+    {{- template "nav" . }}
     <div class="content">
-      <ul>
-        {{ range .Links -}}
-        <li><a href="{{ .Ref }}">{{ .Title }}</a></li>
-        {{ end -}}
-      </ul>
+      {{- template "links" .Links }}
     </div>
   </div>
 </body>

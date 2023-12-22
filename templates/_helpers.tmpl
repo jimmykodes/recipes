@@ -1,0 +1,12 @@
+{{ define "nav" }}
+<div id="nav">
+  <a href="{{ routePrefix }}/">Home</a>
+</div>
+{{ end }}
+
+
+{{ define "links" }}
+<ul>{{ range . }}
+  <li><a href="{{ .Ref }}">{{ .Title }}</a></li>{{ end }}
+</ul>
+{{ end }}

@@ -10,9 +10,7 @@
 
 <body>
   <div id="body">
-    <div id="nav">
-      <a href="/recipes">Home</a>
-    </div>
+    {{- template "nav" . }}
     <div id="header" class="content">
       <h1>{{ .Title }}</h1>
       <div id="tags">
