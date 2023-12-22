@@ -84,7 +84,7 @@ func run() error {
 	var links []Link
 	tags := make(map[string][]Link)
 
-	err = filepath.WalkDir(*recipeDir, func(path string, d fs.DirEntry, err error) error {
+	if err := filepath.WalkDir(*recipeDir, func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
 			return err
 		}
@@ -123,7 +123,10 @@ func run() error {
 		}
 
 		return tmpl.ExecuteTemplate(f, "recipe.go.html", recipe)
-	})
+	}); err != nil {
+		return err
+	}
+
 	for tag, links := range tags {
 		err := func(tag string, links []Link) error {
 			f, err := os.Create(filepath.Join(*distDir, "tag_"+tag+".html"))
@@ -138,15 +141,6 @@ func run() error {
 		}
 	}
 
-	if err != nil {
-		return err
-	}
-	f, err := os.Create(filepath.Join(*distDir, "index.html"))
-	if err != nil {
-		return err
-	}
-	defer f.Close()
-
 	slices.SortFunc(links, func(a, b Link) int {
 		switch {
 		case a.Title < b.Title:
@@ -158,8 +152,36 @@ func run() error {
 		}
 	})
 
-	return tmpl.ExecuteTemplate(f, "index.go.html", struct {
-		Title string
-		Links []Link
-	}{Title: "Recipes", Links: links})
+	tagLinks := make([]Link, 0, len(tags))
+	for tag := range tags {
+		tagLinks = append(tagLinks, Link{Title: tag, Ref: "tag_" + tag + ".html"})
+	}
+	slices.SortFunc(tagLinks, func(a, b Link) int {
+		switch {
+		case a.Title < b.Title:
+			return -1
+		case a.Title > b.Title:
+			return 1
+		default:
+			return 0
+		}
+	})
+	tagFile, err := os.Create(filepath.Join(*distDir, "tags.html"))
+	if err != nil {
+		return err
+	}
+	defer tagFile.Close()
+	if err := tmpl.ExecuteTemplate(tagFile, "tags.go.html", LinkPage{Title: "Tags", Links: tagLinks}); err != nil {
+		return err
+	}
+
+	indexFile, err := os.Create(filepath.Join(*distDir, "index.html"))
+	if err != nil {
+		return err
+	}
+	defer indexFile.Close()
+	if err := tmpl.ExecuteTemplate(indexFile, "index.go.html", LinkPage{Title: "Recipes", Links: links}); err != nil {
+		return err
+	}
+	return nil
 }

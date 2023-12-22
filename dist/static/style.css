@@ -37,6 +37,9 @@ li {
   padding: 1em;
   align-items: center;
 }
+#nav .nav-item {
+  padding-right: 0.5em;
+}
 #header {
   border-bottom: 2px solid #c7c7c7;
 }
