@@ -1,9 +1,9 @@
 all:
-	go run ./cmd/build
+	go run ./cmd/build build
 	mkdir dist/static
 	stylus < assets/style/app.styl > dist/static/style.css
 
 prod:
-	go run -ldflags '-X main.Prefix=/recipes' ./cmd/build
+	go run ./cmd/build build --route-prefix "/recipes"
 	mkdir dist/static
 	stylus < assets/style/app.styl > dist/static/style.css

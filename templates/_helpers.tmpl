@@ -1,13 +1,17 @@
 {{ define "nav" }}
 <div id="nav">
-  <a class="nav-item" href="{{ routePrefix }}/">Home</a>
-  <a class="nav-item" href="{{ routePrefix }}/tags.html">Tags</a>
+  <a class="nav-item" href="{{ route "/"}}">Home</a>
+  <a class="nav-item" href="{{ route "tags.html" }}">Tags</a>
 </div>
 {{ end }}
 
 
 {{ define "links" }}
 <ul>{{ range . }}
-  <li><a href="{{ .Ref }}">{{ title .Title }}</a></li>{{ end }}
+  <li><a href="{{ route .Ref }}">{{ title .Title }}</a></li>{{ end }}
 </ul>
 {{ end }}
+
+{{ define "tag" -}} 
+{{ encode . | printf "tag_%s.html" | route }}
+{{- end }}

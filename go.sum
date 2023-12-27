@@ -1,3 +1,5 @@
+github.com/jimmykodes/gommand v0.11.0 h1:MzNjZuWuf7Hu1XWi6eM0kEk+8yWqaHbQGYoNAffz7JI=
+github.com/jimmykodes/gommand v0.11.0/go.mod h1:FEOdlcyM0HuK4nNkiA17E/0H2kChhf+oSA/n9L2ef0g=
 github.com/jimmykodes/strman v0.0.0-20230224164037-b58272ed60e8 h1:OvqQWDJMoW5teCuEz9Z+DcoshkcvptuXyMd7iyohZCY=
 github.com/jimmykodes/strman v0.0.0-20230224164037-b58272ed60e8/go.mod h1:mXm29iIVETp94o/S9g+f+IAufbWILx8G11LlnT1ZrFc=
 golang.org/x/text v0.14.0 h1:ScX5w1eTa3QqT8oi6+ziP7dTV1S2+ALU0bI+0zXKWiQ=

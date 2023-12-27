@@ -15,7 +15,7 @@
       <h1>{{ .Title }}</h1>
       <div id="tags">
         {{ range .Tags -}}
-        <div class="tag-link"><a href="tag_{{ encode . }}.html">{{ . }}</a></div>
+        <div class="tag-link"><a href="{{ template "tag" . }}">{{ . }}</a></div>
         {{ end -}}
       </div>
     </div>
