@@ -1,17 +1,18 @@
-all: static dist/*.html
+all: dist/*.html dist/style.css
+
+local: local/*.html local/style.css
 
 dist/*.html: recipes/*.yaml
-	go run ./cmd/build build
-
-prod: static
 	go run ./cmd/build build --route-prefix "/recipes"
 
+local/*.html: recipes/*.yaml
+	go run ./cmd/build build --dist ./local
 
-.PHONY: static
-static: dist/style.css
-
-dist/style.css: assets/style/app.styl
-	stylus < assets/style/app.styl > dist/style.css
+dist/style.css local/style.css: assets/style/app.styl
+	stylus < $^ > $@
 
 serve:
-	python3 -m http.server -d dist
+	python3 -m http.server -d local
+
+clean:
+	rm -rf dist local

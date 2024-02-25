@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>{{ .Title }}</title>
+  <title>side</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
@@ -10,12 +10,16 @@
 
 <body>
   <div id="body">
-    {{- template "nav" . }}
+<div id="nav">
+  <a class="nav-item" href="/recipes">Home</a>
+  <a class="nav-item" href="/recipes/tags.html">Tags</a>
+</div>
+
     <div class="content">
-      {{- range .Tags }}
-      <h2>{{ title .Title }}</h2>
-      {{- template "links" .Links }}
-      {{ end }}
+<ul>
+  <li><a href="/recipes/instant_pot_rice.html">Instant Pot Rice</a></li>
+</ul>
+
     </div>
   </div>
 </body>

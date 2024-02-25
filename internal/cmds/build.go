@@ -144,11 +144,14 @@ var buildCmd = &gommand.Command{
 			}
 		})
 
-		tagLinks := make([]Link, 0, len(tags))
-		for tag := range tags {
-			tagLinks = append(tagLinks, Link{Title: tag, Ref: "tag_" + tag + ".html"})
+		var sortedTags []LinkPage
+		for name, links := range tags {
+			sortedTags = append(sortedTags, LinkPage{
+				Title: name,
+				Links: links,
+			})
 		}
-		slices.SortFunc(tagLinks, func(a, b Link) int {
+		slices.SortFunc(sortedTags, func(a, b LinkPage) int {
 			switch {
 			case a.Title < b.Title:
 				return -1
@@ -165,7 +168,14 @@ var buildCmd = &gommand.Command{
 		}
 		defer tagFile.Close()
 
-		if err := tmpl.ExecuteTemplate(tagFile, "tags.go.html", LinkPage{Title: "Tags", Links: tagLinks}); err != nil {
+		if err := tmpl.ExecuteTemplate(
+			tagFile,
+			"tags.go.html",
+			struct {
+				Title string
+				Tags  []LinkPage
+			}{Title: "Tags", Tags: sortedTags},
+		); err != nil {
 			return err
 		}
 
