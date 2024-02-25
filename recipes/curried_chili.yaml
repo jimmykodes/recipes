@@ -1,9 +1,10 @@
 title: Curried Chili (meat optional)
+category:
+  - beef
+  - vegetarian
 tags:
   - chili
   - curry
-  - beef
-  - vegetarian
 ingredients:
   - name: Chili
     items:

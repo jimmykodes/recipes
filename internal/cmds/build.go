@@ -47,6 +47,7 @@ var buildCmd = &gommand.Command{
 
 		var links []Link
 		tags := make(map[string][]Link)
+		categories := make(map[string][]Link)
 
 		if err := filepath.WalkDir("./recipes", func(path string, d fs.DirEntry, err error) error {
 			if err != nil {
@@ -86,6 +87,10 @@ var buildCmd = &gommand.Command{
 			link := Link{Title: recipe.Title, Ref: fn}
 			links = append(links, link)
 
+			for _, category := range recipe.Category {
+				categories[category] = append(categories[category], link)
+			}
+
 			for _, tag := range recipe.Tags {
 				t := tmpls.Encode(tag)
 				tags[t] = append(tags[t], link)
@@ -111,6 +116,24 @@ var buildCmd = &gommand.Command{
 		}
 
 		slices.SortFunc(links, func(a, b Link) int {
+			switch {
+			case a.Title < b.Title:
+				return -1
+			case a.Title > b.Title:
+				return 1
+			default:
+				return 0
+			}
+		})
+
+		var sortedCategories []LinkPage
+		for name, links := range categories {
+			sortedCategories = append(sortedCategories, LinkPage{
+				Title: name,
+				Links: links,
+			})
+		}
+		slices.SortFunc(sortedCategories, func(a, b LinkPage) int {
 			switch {
 			case a.Title < b.Title:
 				return -1
@@ -152,7 +175,17 @@ var buildCmd = &gommand.Command{
 		}
 		defer indexFile.Close()
 
-		if err := tmpl.ExecuteTemplate(indexFile, "index.go.html", LinkPage{Title: "Recipes", Links: links}); err != nil {
+		if err := tmpl.ExecuteTemplate(
+			indexFile,
+			"index.go.html",
+			struct {
+				Title      string
+				Categories []LinkPage
+			}{
+				Title:      "Recipes",
+				Categories: sortedCategories,
+			},
+		); err != nil {
 			return err
 		}
 		return nil

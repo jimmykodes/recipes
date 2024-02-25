@@ -1,8 +1,9 @@
 title: Snickerdoodles
 yield: 8 dozen cookies
+category:
+  - dessert
 tags:
   - cookies
-  - dessert
 ingredients:
   - items:
     - 1 cup butter

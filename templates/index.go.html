@@ -12,7 +12,10 @@
   <div id="body">
     {{- template "nav" . }}
     <div class="content">
+      {{- range .Categories }}
+      <h2>{{ title .Title }}</h2>
       {{- template "links" .Links }}
+      {{ end }}
     </div>
   </div>
 </body>
