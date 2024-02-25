@@ -1,4 +1,6 @@
-all: static
+all: static dist/*.html
+
+dist/*.html: recipes/*.yaml
 	go run ./cmd/build build
 
 prod: static
@@ -6,11 +8,10 @@ prod: static
 
 
 .PHONY: static
-static: dist/static/style.css
+static: dist/style.css
 
-dist/static/style.css: assets/style/app.styl
-	mkdir dist/static
-	stylus < assets/style/app.styl > dist/static/style.css
+dist/style.css: assets/style/app.styl
+	stylus < assets/style/app.styl > dist/style.css
 
 serve:
 	python3 -m http.server -d dist
