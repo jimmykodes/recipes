@@ -1,0 +1,34 @@
+title: Grilled Corn
+category:
+- grilled
+tags:
+- grilled
+ingredients:
+- name: Corn
+  items:
+    - corn on the cob (1 per person)
+    - oil
+    - salt
+- name: Basting Butter
+  items:
+    - butter
+    - cumin
+    - paprika
+    - corriander
+    - garlic powder
+    - alleppo/chipotle pepper
+procedure:
+- name: prepare the grill
+  items:
+  - start a chimney of charcoal and when hot, create a hot side and cool side
+- name: Basting butter
+  items:
+  - melt butter and mix spices to create the basting mix
+- name: Corn
+  items:
+  - strip the cobs, coat in oil and sprinkle with salt
+  - place the cobs right on the border of hot/cold so they are on "medium" heat.
+  - every 5 minutes turn the cobs
+  - after 10 minutes, brush with basting butter (and brush again ev ery 5 minutes)
+  - after 15 minutes, place directly over coals and rotate regularly until the desired level of char is reached
+
