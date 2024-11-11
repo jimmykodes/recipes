@@ -1,0 +1,51 @@
+title: "Italian Chop Sandwich"
+category:
+  - "Sandwiches"
+tags:
+  - "Sandwich"
+  - "Italian"
+  - "Lunch"
+description: "A chopped Italian-style sandwich with ham, salami, pepperoni, Provolone, and a blend of vegetables, dressed with oregano, vinegar, and mayonnaise."
+yield: "2 sandwiches"
+source: "https://www.youtube.com/shorts/O7VWwEFH0x8"
+
+ingredients:
+  - name: "Main Ingredients"
+    items:
+      - "1/4 head iceberg lettuce"
+      - "2 slices leg ham"
+      - "12 slices pepperoni"
+      - "6 slices salami"
+      - "8 cherry tomatoes"
+      - "1/4 red onion, thinly sliced"
+      - "1-2 pickled peppers"
+      - "50g (1.76 oz) Provolone cheese"
+
+  - name: "Dressing"
+    items:
+      - "1 tsp dried oregano"
+      - "3 tbsp mayonnaise"
+      - "1 tbsp red wine vinegar"
+      - "1 tbsp olive oil"
+
+  - name: "Bread"
+    items:
+      - "2 sub rolls"
+
+  - name: Optional
+    items:
+      - Topenade
+
+procedure:
+  - name: "Preparation"
+    items:
+      - "Place the lettuce, ham, pepperoni, salami, tomatoes, red onions, pickled peppers, and Provolone cheese on a chopping board."
+      - "Chop everything until roughly 1cm x 1cm (about 0.4 inches x 0.4 inches)."
+      - "Add the oregano, mayonnaise, vinegar, and oil to the chopped ingredients and mix well."
+
+  - name: "Assembly"
+    items:
+      - "Cut open the sub rolls and hollow out the center."
+      - "If using optional topenade, smear onto the bread."
+      - "Fill each roll with the chopped mixture."
+      - "Close the rolls and enjoy."
