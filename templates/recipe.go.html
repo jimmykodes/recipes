@@ -13,11 +13,6 @@
 		{{- template "nav" . }}
 		<div id="header" class="content">
 			<h1>{{ .Title }}</h1>
-			<div id="tags">
-				{{ range .Tags -}}
-				<div class="tag-link"><a href="{{ template "tag" . }}">{{ . }}</a></div>
-				{{ end -}}
-			</div>
 			{{- if .Description }}
 			<div id="description" class="content">
 				<p>{{ .Description }}</p>
@@ -33,6 +28,11 @@
 				<p>Source: {{ .Source }}</p>
 			</div>
 			{{- end }}
+			<div id="tags">
+				{{ range .Tags -}}
+				<div class="tag-link"><a href="{{ template "tag" . }}">{{ . }}</a></div>
+				{{ end -}}
+			</div>
 		</div>
 		<div class="flex">
 			<div id="ingredients" class="content">
