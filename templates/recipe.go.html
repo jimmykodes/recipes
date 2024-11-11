@@ -14,19 +14,13 @@
 		<div id="header" class="content">
 			<h1>{{ .Title }}</h1>
 			{{- if .Description }}
-			<div id="description" class="content">
-				<p>{{ .Description }}</p>
-			</div>
+			<p id="description"> {{ .Description }}</p>
 			{{- end }}
 			{{- if .Yield }}
-			<div id="yield" class="content">
-				<p>Yield: {{ .Yield }}</p>
-			</div>
+			<p id="yield">Yield: {{ .Yield }}</p>
 			{{- end }}
 			{{- if .Source }}
-			<div id="source" class="content">
-				<p>Source: {{ .Source }}</p>
-			</div>
+			<p id="source">Source: {{ .Source }}</p>
 			{{- end }}
 			<div id="tags">
 				{{ range .Tags -}}

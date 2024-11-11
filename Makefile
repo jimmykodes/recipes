@@ -1,13 +1,13 @@
 all: dist dist/style.css
 
-local: local/*.html local/style.css
-
 .PHONY: dist
 dist:
 	go run ./cmd/build build --route-prefix "/recipes"
 
-local/*.html: recipes/*.yaml
+.PHONY: local
+local:
 	go run ./cmd/build build --dist ./local
+	$(MAKE) local/style.css
 
 dist/style.css local/style.css: assets/style/app.styl
 	stylus < $^ > $@
