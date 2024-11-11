@@ -1,0 +1,42 @@
+title: "Smash Burgers"
+category:
+  - "beef"
+tags:
+  - "beef"
+  - "burger"
+yield: "4 burgers"
+
+ingredients:
+  - name: "Burger Patties"
+    items:
+      - "1 lb ground beef, divided into 1/4 lb balls"
+      - "Thinly sliced white cheddar cheese"
+      - "Diced onions"
+
+  - name: "Toppings"
+    items:
+      - "Butter lettuce leaves"
+      - "Tomato slices"
+      - "Fry sauce (see separate recipe)"
+
+  - name: "Buns"
+    items:
+      - "4 _basic_ burger buns, toasted"
+      
+procedure:
+  - name: "Cooking the Patties"
+    items:
+      - "Roll ground beef into 1/4 lb balls."
+      - "Heat a cast iron skillet over high heat."
+      - "Place a beef ball on the hot skillet and, using a protein press, metal spatula, or bottom of a saucepan, smash the ball into a thin patty."
+      - "Cook until the top side is only slightly pink."
+      - "Add a handful of diced onions to the skillet and flip the patty on top of the onions."
+      - "Place a slice of white cheddar cheese on the patty, cover, and cook until the cheese melts."
+      - "While the cheese melts, assemble the rest of the burger"
+
+  - name: "Assembly"
+    items:
+      - "Spread fry sauce on the bottom bun."
+      - "Layer with a lettuce leaf and a slice of tomato."
+      - "Place the patty with onions on top of the tomato (consider adding a second patty for a double!)."
+      - "Spread fry sauce on the top bun and place it on the burger."
