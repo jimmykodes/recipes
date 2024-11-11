@@ -2,53 +2,63 @@
 <html lang="en">
 
 <head>
-  <title>{{ .Title }}</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+	<title>{{ .Title }}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="body">
-    {{- template "nav" . }}
-    <div id="header" class="content">
-      <h1>{{ .Title }}</h1>
-      <div id="tags">
-        {{ range .Tags -}}
-        <div class="tag-link"><a href="{{ template "tag" . }}">{{ . }}</a></div>
-        {{ end -}}
-      </div>
-    </div>
-    <div class="flex">
-      <div id="ingredients" class="content">
-        <h2>Ingredients</h2>
-        {{ range .Ingredients -}}
-        {{ if .Name -}}
-        <h3>{{ .Name }}</h3>
-        {{- end }}
-        <ul>
-          {{ range .Items -}}
-          <li>{{ . }}</li>
-          {{ end -}}
-        </ul>
-        {{ end }}
-      </div>
-      <div id="procedure" class="content">
-        <h2>Procedure</h2>
-        {{ range .Procedure -}}
-        {{ if .Name }}<h3>{{ .Name }}</h3>{{ end }}
-        <ol>
-          {{ range .Items -}}
-          <li>{{ . }}</li>
-          {{ end -}}
-        </ol>
-        {{- end }}
-      </div>
-    </div>
-    <div id="footer" class="content">
-      <div>Copyright (c) 2023 Jimmy Keith. All Rights Reserved. </div>
-    </div>
-  </div>
+	<div id="body">
+		{{- template "nav" . }}
+		<div id="header" class="content">
+			<h1>{{ .Title }}</h1>
+			<div id="tags">
+				{{ range .Tags -}}
+				<div class="tag-link"><a href="{{ template "tag" . }}">{{ . }}</a></div>
+				{{ end -}}
+			</div>
+			{{- if .Description }}
+			<div id="description" class="content">
+				<p>{{ .Description }}</p>
+			</div>
+			{{- end }}
+			{{- if .Yield }}
+			<div id="yield" class="content">
+				<p>{{ .Yield }}</p>
+			</div>
+			{{- end }}
+		</div>
+		<div class="flex">
+			<div id="ingredients" class="content">
+				<h2>Ingredients</h2>
+				{{ range .Ingredients -}}
+				{{ if .Name -}}
+				<h3>{{ .Name }}</h3>
+				{{- end }}
+				<ul>
+					{{ range .Items -}}
+					<li>{{ . }}</li>
+					{{ end -}}
+				</ul>
+				{{ end }}
+			</div>
+			<div id="procedure" class="content">
+				<h2>Procedure</h2>
+				{{ range .Procedure -}}
+				{{ if .Name }}<h3>{{ .Name }}</h3>{{ end }}
+				<ol>
+					{{ range .Items -}}
+					<li>{{ . }}</li>
+					{{ end -}}
+				</ol>
+				{{- end }}
+			</div>
+		</div>
+		<div id="footer" class="content">
+			<div>Copyright (c) 2023 Jimmy Keith. All Rights Reserved. </div>
+		</div>
+	</div>
 </body>
 
 </html>

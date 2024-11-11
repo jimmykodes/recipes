@@ -1,8 +1,9 @@
-all: dist/*.html dist/style.css
+all: dist dist/style.css
 
 local: local/*.html local/style.css
 
-dist/*.html: recipes/*.yaml
+.PHONY: dist
+dist:
 	go run ./cmd/build build --route-prefix "/recipes"
 
 local/*.html: recipes/*.yaml

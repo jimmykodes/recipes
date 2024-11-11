@@ -4,6 +4,8 @@ type Recipe struct {
 	Title       string    `yaml:"title"`
 	Category    []string  `yaml:"category"`
 	Tags        []string  `yaml:"tags"`
+	Description string    `yaml:"description"`
+	Yield       string    `yaml:"yield"`
 	Ingredients []Section `yaml:"ingredients"`
 	Procedure   []Section `yaml:"procedure"`
 }
