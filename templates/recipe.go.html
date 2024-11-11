@@ -25,7 +25,12 @@
 			{{- end }}
 			{{- if .Yield }}
 			<div id="yield" class="content">
-				<p>{{ .Yield }}</p>
+				<p>Yield: {{ .Yield }}</p>
+			</div>
+			{{- end }}
+			{{- if .Source }}
+			<div id="source" class="content">
+				<p>Source: {{ .Source }}</p>
 			</div>
 			{{- end }}
 		</div>

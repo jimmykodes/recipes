@@ -6,6 +6,7 @@ type Recipe struct {
 	Tags        []string  `yaml:"tags"`
 	Description string    `yaml:"description"`
 	Yield       string    `yaml:"yield"`
+	Source      string    `yaml:"source"`
 	Ingredients []Section `yaml:"ingredients"`
 	Procedure   []Section `yaml:"procedure"`
 }
