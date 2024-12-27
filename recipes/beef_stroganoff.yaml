@@ -1,0 +1,66 @@
+title: "Beef Stroganoff"
+category:
+  - "beef"
+tags:
+  - "beef"
+description: "A rich and creamy beef stroganoff made with tender top sirloin steak, mushrooms, and a luscious sour cream sauce. Perfect over pasta or rice."
+yield: "4 servings"
+
+ingredients:
+  - name: "Main Ingredients"
+    items:
+      - "1 lb beef (top sirloin steak, thinly sliced into strips; or ground beef)"
+      - "2 Tbsp olive oil"
+      - "2 Tbsp unsalted butter"
+      - "1/2 medium onion, finely chopped"
+      - "1/2 lb brown mushrooms, finely diced"
+      - "1 garlic clove, minced"
+      - "1 Tbsp all-purpose flour"
+      - "1 cup beef broth"
+      - "3/4 cup heavy whipping cream"
+      - "1/4 cup sour cream"
+      - "1 Tbsp Worcestershire sauce"
+      - "1/2 tsp dijon mustard"
+      - "1/2 tsp salt"
+      - "1/4 tsp black pepper"
+
+procedure:
+  - name: "Prepare the Beef - steak"
+    items:
+      - "Place a large deep pan or dutch oven over medium-high heat."
+      - "Add 2 Tbsp oil, and once hot, add thinly sliced beef strips in a single layer."
+      - "Cook 1 minute per side without stirring, until browned and no longer red."
+      - "Sear beef in 2 batches to avoid overcrowding the pan."
+      - "Remove beef to a plate and cover to keep warm."
+  - name: "Prepare the Beef - ground beef"
+    items:
+      - "Place a large deep pan or dutch oven over medium-high heat."
+      - "Add 2 Tbsp oil, and once hot, add ground beef."
+      - "Cook until no longer red"
+      - "Remove to a bowl with paper towel and allow to drain"
+
+  - name: "Cook the Vegetables"
+    items:
+      - "Add 2 Tbsp butter to the same pan."
+      - "Add chopped onion and diced mushrooms."
+      - "Sautee 6–8 minutes until liquid evaporates and vegetables are soft and lightly browned."
+
+  - name: "Make the Sauce"
+    items:
+      - "Add minced garlic clove and sautee until fragrant, about 30 seconds."
+      - "Add 1 Tbsp flour and sautee another minute, stirring constantly."
+      - "Pour in 1 cup beef broth, scraping any bits from the bottom of the pan."
+      - "Add 3/4 cup whipping cream and simmer 1–2 minutes until slightly thickened."
+
+  - name: "Finish the Sauce"
+    items:
+      - "Stir a few tablespoons of sauce into 1/4 cup sour cream to temper it."
+      - "Add tempered sour cream to the pan while stirring constantly."
+      - "Stir in Worcestershire sauce, dijon mustard, and season with salt and pepper to taste."
+      - "Simmer until sauce is creamy."
+
+  - name: "Combine and Serve"
+    items:
+      - "Add beef with accumulated juices back to the pan."
+      - "Bring just to a simmer until beef is heated through."
+      - "Serve over pasta or rice and enjoy."
