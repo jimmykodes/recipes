@@ -1,0 +1,22 @@
+title: "Cream Cheese Frosting"
+category:
+  - "dessert"
+tags:
+  - "frosting"
+description: "A rich and creamy frosting perfect for cakes, cupcakes, or cookies."
+yield: "About 2 cups"
+
+ingredients:
+  - name: "Frosting Ingredients"
+    items:
+      - "8 oz cream cheese, softened"
+      - "1/2 cup butter, softened"
+      - "2 tsp vanilla extract"
+      - "2-3 cups powdered sugar"
+
+procedure:
+  - name: "Make the Frosting"
+    items:
+      - "Cream together the butter, cream cheese, and vanilla until smooth."
+      - "Add powdered sugar half a cup at a time, mixing completely after each addition."
+      - "Stop adding powdered sugar once the frosting reaches the desired sweetness and consistency."

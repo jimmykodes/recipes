@@ -1,0 +1,59 @@
+title: Cinnamon Rolls
+category:
+  - baking
+tags:
+  - baking
+description: "Soft and fluffy cinnamon rolls with a rich pecan and raisin filling, topped with a sweet vanilla glaze. Perfect for a festive morning treat."
+yield: "12 rolls"
+source: "https://www.foodnetwork.com/recipes/valerie-bertinelli/christmas-morning-cinnamon-rolls-3539006"
+
+ingredients:
+  - name: "Dough"
+    items:
+      - "1 cup warm whole milk"
+      - "1/3 cup granulated sugar"
+      - "6 tablespoons unsalted butter, melted"
+      - "1 teaspoon kosher salt"
+      - "One 1/4-ounce package active dry yeast"
+      - "2 large eggs"
+      - "4 cups all-purpose flour, plus more for dusting"
+      - "Vegetable oil, for the bowl"
+
+  - name: "Filling"
+    items:
+      - "6 tablespoons unsalted butter, softened, plus more for the baking dish"
+      - "3/4 cup light brown sugar"
+      - "2 tablespoons ground cinnamon"
+      - "1 teaspoon ground nutmeg"
+
+procedure:
+  - name: "Prepare the Dough"
+    items:
+      - "Combine the milk, granulated sugar, butter, salt, and yeast in the bowl of a stand mixer fitted with the hook attachment; stir to combine."
+      - "Add the eggs and stir until well mixed."
+      - "Add the flour and mix on medium-high speed until the dough is smooth and elastic, about 4 minutes."
+      - "Transfer the dough to a lightly oiled bowl, cover with plastic wrap or a clean kitchen towel, and let stand in a warm, draft-free place until doubled in size, 1 1/2 to 2 hours."
+
+  - name: "Prepare the Filling"
+    items:
+      - "Butter a 13-by-9-inch glass baking dish."
+      - "On a lightly floured surface, roll the dough into an 18-by-12-inch rectangle."
+      - "Spread the softened butter evenly over the dough, leaving a 1/2-inch border."
+      - "Sprinkle the brown sugar and cinnamon evenly over the buttered dough."
+      - "Add pecans and raisins if using."
+
+  - name: "Shape and Rise the Rolls"
+    items:
+      - "Starting with a short end, roll up the dough tightly and press the edges to seal."
+      - "Cut the dough into 12 slices and arrange them in the buttered baking dish."
+      - "Cover with plastic wrap and let stand until doubled in size, about 1 hour, or refrigerate overnight."
+      - "If refrigerated, let the rolls sit at room temperature for 1 hour before baking."
+
+  - name: "Bake the Rolls"
+    items:
+      - "Preheat the oven to 375°F."
+      - "Bake the cinnamon rolls until puffed and golden brown, about 25 minutes."
+
+  - name: "Prepare the Frosting"
+    items:
+    - "See Cream Cheese Frosting recipe"

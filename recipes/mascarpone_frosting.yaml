@@ -1,0 +1,21 @@
+title: "Mascarpone Frosting"
+category:
+  - "dessert"
+tags:
+  - "frosting"
+description: "A light and creamy frosting with the delicate flavor of mascarpone, perfect for cakes or pastries."
+yield: "About 1 cup"
+
+ingredients:
+  - name: "Frosting Ingredients"
+    items:
+      - "4 oz mascarpone cheese, softened"
+      - "1/2 tsp vanilla extract"
+      - "1-2 cups powdered sugar"
+
+procedure:
+  - name: "Make the Frosting"
+    items:
+      - "Cream the mascarpone cheese and vanilla together until smooth."
+      - "Add powdered sugar half a cup at a time, mixing completely after each addition."
+      - "Stop adding powdered sugar once the frosting reaches the desired sweetness and consistency."
