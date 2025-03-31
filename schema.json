@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Recipe Schema",
+  "type": "object",
+  "required": ["title", "category", "ingredients", "procedure"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the recipe"
+    },
+    "category": {
+      "type": "array",
+      "description": "Categories the recipe belongs to",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags associated with the recipe",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string",
+      "description": "A detailed description of the recipe"
+    },
+    "yield": {
+      "type": "string",
+      "description": "The amount of servings the recipe makes"
+    },
+    "source": {
+      "type": "string",
+      "description": "The source of the recipe, e.g. URL or book reference"
+    },
+    "ingredients": {
+      "type": "array",
+      "description": "Grouped lists of ingredients",
+      "items": {
+        "type": "object",
+        "required": ["items"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the ingredient group"
+          },
+          "items": {
+            "type": "array",
+            "description": "List of ingredients in this group",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "procedure": {
+      "type": "array",
+      "description": "Grouped lists of steps to prepare the recipe",
+      "items": {
+        "type": "object",
+        "required": ["items"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the procedure group"
+          },
+          "items": {
+            "type": "array",
+            "description": "List of steps in this procedure group",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
