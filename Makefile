@@ -9,8 +9,8 @@ local:
 	go run ./cmd/build build --dist ./local
 	$(MAKE) local/style.css
 
-dist/style.css local/style.css: assets/style/app.styl
-	stylus < $^ > $@
+dist/style.css local/style.css: assets/style/app.sass
+	npx sass $^ $@
 
 serve:
 	python3 -m http.server -d local

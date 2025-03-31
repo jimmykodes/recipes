@@ -1,12 +1,14 @@
-$fg = #111
-$fg_light = lighten($fg, 20%)
+@use "sass:color"
 
-$bg = #f9f9f9
-$bg_dark = darken($bg, 20%)
+$fg: #111
+$fg_light: color.scale($fg, $lightness: 20%)
 
-$link = #202746
-$link_hover = darken($link, 10%)
-$link_visited = lighten($link, 10%)
+$bg: #f9f9f9
+$bg_dark: color.scale($bg, $lightness: -20%)
+
+$link: #202746
+$link_hover: color.scale($link, $lightness: -10%)
+$link_visited: color.scale($link, $lightness: 10%)
 
 body
   height: 100%
@@ -31,7 +33,7 @@ li
   padding-bottom: 10px
 
 .content
-  padding: .25em 1em 1em
+  padding: 0.25em 1em 1em
 
 .flex
   display: flex
@@ -46,8 +48,9 @@ li
   display: flex
   padding: 1em
   align-items: center
+  
   .nav-item
-    padding-right: .5em
+    padding-right: 0.5em
 
 #header
   border-bottom: 2px solid $bg_dark
@@ -61,22 +64,22 @@ li
 #tags
   display: flex
   padding-bottom: 1em
-
-#tags div
-  padding: .5em
-  margin-left: .5em
-  border-radius: 1em
-  text-transform: capitalize
-  background-color: $fg_light
-  color: $bg
-  font-size: 14px
+  
+  div
+    padding: 0.5em
+    margin-left: 0.5em
+    border-radius: 1em
+    text-transform: capitalize
+    background-color: $fg_light
+    color: $bg
+    font-size: 14px
 
 #footer
   border-top: 2px solid $bg_dark
   background-color: $bg
   text-align: center
 
-@media (min-width:701px)
+@media (min-width: 701px)
   #ingredients
     height: 100%
     border-right: 1px solid $bg_dark
@@ -84,7 +87,7 @@ li
   .flex
     height: 100%
 
-@media (max-width:700px)
+@media (max-width: 700px)
   .flex
     flex-direction: column
 
@@ -94,19 +97,19 @@ li
 .tag-link
   a
     color: $bg_dark
-  a:visited
-    color: $bg_dark
-  a:hover
-    color: darken($bg_dark, 20%)
+    
+    &:visited
+      color: $bg_dark
+    
+    &:hover
+      color: color.scale($bg_dark, $lightness: -20%)
 
 a
   color: $link
   text-decoration: none
-
-a:hover
-  color: $link_hover
-
-a:visited
-  color: $link_visited
-
-
+  
+  &:hover
+    color: $link_hover
+  
+  &:visited
+    color: $link_visited
