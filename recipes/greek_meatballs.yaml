@@ -1,0 +1,40 @@
+title: Greek Meatballs
+category:
+  - beef
+tags:
+  - beef
+  - mediterranean
+ingredients:
+  - items:
+    - 1lb ground beef
+    - 1/2 Yellow onion (grated)
+    - 4 cloves garlic (minced)
+    - 1/2 cup panko bread crumbs
+    - 1/4 cup milk (or yogurt thinned to milk like consistency)
+    - 1 egg
+    - 1 tsp dried oregano
+    - 1 tsp ground cumin
+    - 1 tsp ground corriander
+    - 1/2 tsp smoked paprika
+    - 1/8 tsp cinnamon
+procedure:
+  - name: Make the Meatballs
+    items:
+    - mix panko and milk and let sit to absorb all the liquid
+    - grate onion and pat with paper towel to soak up some moisture (so meat mixture is not too soggy)
+    - combine onion, garlic, and spices with the soaked bread crumbs
+    - add meat and egg to mixture and combine. Do not overwork the meat!
+  - name: Cook the Meatballs
+    items:
+      - Heat cast iron pan over medium high heat
+      - Roll meat into golfball sized balls
+      - Once the pan is hot, add the meatballs to the pan, working in a spiral
+      - As the meatballs brown, rotate them.
+      - Optionally finish the meatballs in the oven or the instant pot
+  - name: Finish in the instant pot
+    items:
+      - Transfer the meatballs to the instant pot
+      - Use 1 cup of beef broth to deglaze the pan. Add this liquid to the instant pot.
+      - Pressure cook on high for 5 minutes
+      - Manually release the pressure
+  
