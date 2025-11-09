@@ -1,0 +1,64 @@
+title: Chili Mac
+category:
+  - beef
+  - meal prep
+tags:
+  - beef
+  - meal prep
+  - pasta
+description: A hearty one-pot meal combining ground beef, beans, tomatoes, and pasta in a flavorful sauce, topped with melted cheese.
+yield: about 6 servings
+macros:
+  total:
+    calories: 3000
+    protein: 200g
+    fiber: 40g
+    carbs: 275g
+    fat: 140g
+  perServing:
+    calories: 500
+    protein: 30g
+    fiber: 7g
+    carbs: 45g
+    fat: 23g
+ingredients:
+  - name: Ingredients
+    items:
+      - 1.5 lb ground beef (prefer leaner)
+      - 1 15oz can black beans
+      - 1 15oz can diced tomatoes
+      - 1 15oz can tomato sauce
+      - 1 tbsp tomato paste
+      - 4 cloves garlic, minced
+      - 1/2 diced onion
+      - 200g protein+ pasta
+      - 120g cheese (colby jack or similar)
+  - name: For Serving
+    items:
+      - sour cream
+      - diced green onion
+      - additional cheese
+      - corn chips
+procedure:
+  - name: Cooking the Meat
+    items:
+      - Cook the ground beef until mostly cooked through, breaking up as you go
+      - Set aside in a bowl lined with a paper towel to drain excess fat
+  - name: Building the Sauce
+    items:
+      - Add onions to the pan (adding any fat if needed) and cook until softened
+      - Add tomato paste and garlic, cooking until the tomato paste caramelizes a bit and the garlic is fragrant
+      - Add the diced tomatoes and tomato sauce to pan before the garlic burns
+      - Scrape up any bits on the bottom of the pan
+      - Return the meat to the sauce and combine
+  - name: Cooking the Pasta
+    items:
+      - Bring water to a boil and cook the pasta for half the time denoted on the package
+      - When the pasta is half cooked, reserve a cup of pasta water and then drain the par-cooked pasta
+  - name: Final Assembly
+    items:
+      - Add the beans and the pasta to the sauce to heat the beans and finish cooking the noodles
+      - If the sauce is too thick, use reserved pasta water to thin (it will thicken as the noodles cook and absorb water, so keep an eye on it)
+      - Once the noodles are cooked through, mix in the cheese
+      - Once the cheese has melted, serve
+      - Top with optional toppings as desired
