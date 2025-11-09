@@ -1,0 +1,34 @@
+title: Pizza Dough
+category:
+  - baking
+tags:
+  - pizza
+description: Quick pizza dough using baking powder for same-day use. Creates 3 individual pizzas with par-baked crusts.
+yield: 3 pizza crusts
+ingredients:
+  - items:
+      - 3 cups all-purpose flour
+      - 2 tsp baking powder
+      - 1.5 tsp salt
+      - 3 tbsp olive oil
+      - 1.5 tsp agave
+      - 1.25 cup water (divided)
+procedure:
+  - name: Making the Dough
+    items:
+      - Place pizza stone in oven and preheat to 425°F
+      - Combine all dry ingredients in a large bowl
+      - In a separate bowl, combine agave, olive oil, and 3/4 cup water
+      - Add wet ingredients to dry ingredients and combine
+      - Add remaining water as needed to get a tacky dough
+      - Divide into 3 equal balls
+      - Let stand 15-20 minutes to relax
+  - name: Par-baking
+    items:
+      - Roll out each ball of dough to desired thickness
+      - Cook on pizza stone 3-4 minutes per side until golden-ish
+      - Lance any bubbles with a fork if needed while par-baking
+  - name: Final Assembly and Baking
+    items:
+      - Top par-baked pizzas with desired toppings
+      - Place back on pizza stone for 10-ish minutes or until crust reaches desired doneness and toppings are cooked through
