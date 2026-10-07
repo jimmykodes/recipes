@@ -1,0 +1,26 @@
+title: Pancakes
+category:
+  - breakfast
+tags:
+  - breakfast
+ingredients:
+  - name: Dry
+    items:
+      - 1 1/2 cup (180g) AP flour
+      - 1 Tbsp baking
+      - 1 Tbsp white sugar
+      - 1/4 tsp salt
+      - sprinkle of cinnamon
+  - name: Wet
+    items:
+      - 1 cup milk
+      - 3 Tbsp oil
+      - 1 egg
+      - 1 tsp vanilla
+procedure:
+  -
+    items:
+      - combine dry
+      - combine wet
+      - pour wet onto dry and mix - leave lumpy
+      - 1/4 cup doses onto hot griddle

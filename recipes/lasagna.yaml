@@ -1,0 +1,54 @@
+title: Lasagna
+category:
+  - pasta
+tags:
+  - pasta
+  - beef
+  - baking
+  - casserole
+  - italian
+ingredients:
+  - items:
+      - 1lb ground beef
+      - 1lb ground pork
+      - 1lb lasagna noodles (dry)
+      - 2 lb whole milk ricotta
+      - 1 medium yellow onion (diced)
+      - 2 medium carrots (diced)
+      - 2 celery sticks (diced)
+      - 4 garlic cloves (minced)
+      - 4 oz red wine
+      - 1 Tbsp tomato paste
+      - 1 32 oz can marinara
+      - 2 cups shredded parm
+      - 2 Tbsp dried basil
+      - 2 Tbsp dried oregano
+      - 1 lb shredded mozzeralla
+procedure:
+  - name: Prep the noodles
+    items:
+      - cook to package instructions
+  - name: Prep the meat
+    items:
+      - Saute beef and pork in batches until complete and remove from pan
+      - Drain excess fat
+      - Add 1 tbsp fat back and saute carrots (4 min)
+      - Add onion, saute 4 min
+      - Add celery, saute 2 min
+      - Add garlic and tomato paste, saute until fragrant (30s)
+      - add wine, cook until reduced slightly
+      - Add back meat
+      - Add marinara
+  - name: Prep the cheese
+    items:
+      - Combine ricotta, parmesan, basil, and oregano.
+      - salt and pepper as needed
+  - name: Build and bake
+    items:
+      - start with a layer of meat sauce
+      - layer noodles
+      - layer ricotta mixture
+      - layer shredded mozz
+      - layer noodles
+      - repeate until done. Be sure to end with meat then shredded mozz
+      - bake 375 for 25 minutes
